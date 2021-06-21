@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid grey;
+            /* border-collapse : collapse; - 중첩된 이중선을 하나로 통합되도록 */
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            /* padding: top right bottom left 순 */
+            padding: 10px;
+        }
+
+        th {
+            background-color: bisque;
+        }
+
+        /* tr:nth-child(odd)>td {
+            background-color: linen;
+        }
+
+        tr:nth-child(even)>td {
+            background-color: mediumaquamarine;
+        } */
+
+        tr>td:nth-child(1) {
+            text-align: center;
+        }
+
+        tr>td:nth-child(2) {
+            background-color: lightpink;
+            text-align: right;
+        }
+
+        tr>td:nth-child(3) {
+            background-color: lightseagreen;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width: 100%;border: 1px solid grey;">
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>이메일</th>
+                <th>연락처</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>홍길동</td>
+                <td>123@gmail.com</td>
+                <td>012-3456-7891</td>
+            </tr>
+
+            <tr>
+                <td>홍길동</td>
+                <td>123@gmail.com</td>
+                <td>012-3456-7891</td>
+            </tr>
+
+            <tr>
+                <td>홍길동</td>
+                <td>123@gmail.com</td>
+                <td>012-3456-7891</td>
+            </tr>
+
+            <tr>
+                <td>홍길동</td>
+                <td>123@gmail.com</td>
+                <td>012-3456-7891</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
